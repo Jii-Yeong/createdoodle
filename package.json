@@ -6,6 +6,20 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt3": "latest"
+    "@iconify-json/mdi": "^1.1.1",
+    "nuxt3": "^3.0.0-27439932.78761c2",
+    "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^6.0.1",
+    "ant-design-vue": "^2.2.8",
+    "balm-ui": "^9.42.2",
+    "material-icons": "^1.10.7",
+    "pathe": "^0.2.0",
+    "scss": "^0.2.4",
+    "scss-loader": "^0.0.1",
+    "unplugin-icons": "^0.13.2",
+    "unplugin-vue-components": "^0.17.21",
+    "vuetify": "^2.6.3"
   }
 }
