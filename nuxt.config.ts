@@ -7,6 +7,17 @@ export default defineNuxtConfig({
   buildModules: [
     'unplugin-icons/nuxt',
   ],
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+    {
+      path: 'src/pages',
+      extensions: ['vue'],
+      pathPrefix: false,
+    }
+  ],
   vite: {
     plugins: [
       Components({
