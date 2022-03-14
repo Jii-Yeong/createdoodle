@@ -14,9 +14,9 @@ import { category } from "@src/data/category";
 
 <style lang="scss" scoped>
 #navigation {
+  margin-top: 60px;
   width: 320px;
   height: 93%;
-  position: relative;
   border-right: 1px solid #c2c2c2;
   position: fixed;
   overflow-y: auto;

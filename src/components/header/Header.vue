@@ -16,6 +16,9 @@
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
+  position: fixed;
+  margin: 0;
+  z-index: 100;
   .title {
     font-size: 18px;
     margin: 13px 47px;
