@@ -9,10 +9,7 @@
     "@iconify-json/mdi": "^1.1.1",
     "nuxt3": "^3.0.0-27451165.114cbe3",
     "sass": "^1.49.9",
-    "vite-plugin-md": "^0.11.9",
-    "vite-plugin-package-config": "^0.1.1",
     "vue-loader": "^17.0.0",
-    "vue-markdown-loader": "^2.5.0",
     "vue-template-compiler": "^2.6.14"
   },
   "dependencies": {
