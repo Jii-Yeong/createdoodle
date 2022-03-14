@@ -7,9 +7,6 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'vercel',
   },
-  buildModules: [
-    'unplugin-icons/nuxt',
-  ],
   components: [
     {
       path: '~/components',
