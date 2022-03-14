@@ -15,5 +15,11 @@
         "Service-Worker-Allowed": "/"
       }
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
   ]
 }
