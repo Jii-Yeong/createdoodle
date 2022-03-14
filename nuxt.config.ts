@@ -34,6 +34,6 @@ export default defineNuxtConfig({
         '@src': resolve(__dirname, './src'),
         '@assets': resolve(__dirname, './assets')
       }
-    }
-  }
+    },
+  },
 })
