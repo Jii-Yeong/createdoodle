@@ -1,12 +1,14 @@
 import VMdPreview from '@kangc/v-md-editor/lib/preview';
-import '@kangc/v-md-editor/lib/style/preview.css';
 import vuepressTheme from '@kangc/v-md-editor/lib/theme/vuepress.js';
-import '@kangc/v-md-editor/lib/theme/style/github.css';
-import hljs from 'highlight.js';
+import Prism from 'prismjs';
+import '@kangc/v-md-editor/lib/style/base-editor.css';
+import '@kangc/v-md-editor/lib/theme/style/vuepress.css';
+import 'prismjs/components/prism-json';
+
 
 export default defineNuxtPlugin((nuxtApp) => {
   VMdPreview.use(vuepressTheme, {
-    Hljs: hljs,
+    Prism,
   });
   nuxtApp.vueApp.use(VMdPreview);
 })
