@@ -6,18 +6,15 @@
 
 <script setup>
 import CommonHeader from "@src/components/header/Header.vue";
-import { onMounted } from "vue";
+import css from "@assets/css/main.scss";
 
 const route = useRoute();
-
 const id = route.params.id;
-
 const text = ref("");
 
 if (process.server) {
   const fs = await import("fs");
   const content = fs.readFileSync(`posts/${id}.md`, "utf8");
-  console.log(content);
   text.value = content;
 }
 </script>
@@ -26,5 +23,6 @@ if (process.server) {
 #post-wrapper {
   width: 75%;
   float: right;
+  margin-top: 100px;
 }
 </style>
