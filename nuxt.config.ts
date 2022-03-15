@@ -4,9 +4,6 @@ import Components from 'unplugin-vue-components/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineNuxtConfig({
-  nitro: {
-    preset: 'vercel',
-  },
   components: [
     {
       path: '~/components',
