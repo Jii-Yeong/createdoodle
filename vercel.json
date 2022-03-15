@@ -2,13 +2,17 @@
   "version": 2,
   "builds": [
     {
-      "src": "nuxt.config.ts",
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder",
       "config": {
-        "generateStaticRoutes": true,
-        "tscOptions": {
-          "sourceMap": false
-        }
+        "serverFiles": [
+          "api/**",
+          "server-middleware/**"
+        ]
       }
     }
   ]
