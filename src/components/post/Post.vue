@@ -15,10 +15,8 @@ const __dirname = pathe.resolve();
 
 if (process.server) {
   const fs = await import("fs");
-  const content = fs.readFileSync(
-    resolve(__dirname, `./posts/${id}.md`),
-    "utf8"
-  );
+  const filePath = resolve(".", `posts/${1}.md`);
+  const content = fs.readFileSync(filePath, "utf8");
   text.value = content;
 }
 </script>
