@@ -11,5 +11,12 @@
       ]
     }
   },
-  "skipLibCheck": true
+  "skipLibCheck": true,
+  "lib": [
+    "es2015",
+    "es2016",
+    "esnext"
+  ],
+  "experimentalDecorators": true,
+  "emitDecoratorMetadata": true
 }
