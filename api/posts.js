@@ -1,4 +1,4 @@
-const url = process.env.NEXT_PUBLIC_VERCEL_URL
+const url = process.env.VERCEL_URL
 
 export const getMd = (id) => {
   console.log(url)
