@@ -16,16 +16,11 @@
       }
     }
   ],
-  "routes": [
+  "redirects": [
     {
-      "src": "/.nuxt/.+",
-      "headers": {
-        "Cache-Control": "max-age=31557600"
-      }
-    },
-    {
-      "src": "^/pages/post/(.*)",
-      "dest": "^/post"
+      "source": "/pages/post/:id",
+      "destination": "/post/:id",
+      "permanent": false
     }
   ]
 }
