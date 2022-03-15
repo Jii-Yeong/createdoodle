@@ -22,7 +22,7 @@
     "noEmit": true,
     "experimentalDecorators": true,
     "types": [
-      "@types/node",
+      "node",
       "@nuxt/types"
     ]
   },
