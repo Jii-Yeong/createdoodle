@@ -13,6 +13,7 @@ const text = ref("");
 if (process.server) {
   const fs = await import("fs");
   const content = fs.readFileSync(`./posts/${id}.md`, "utf8");
+  const content = fs.readFileSync(join(__dirname, "posts", `${id}.md`), "utf8");
   text.value = content;
 }
 </script>
