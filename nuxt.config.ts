@@ -4,6 +4,9 @@ import Components from 'unplugin-vue-components/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineNuxtConfig({
+  publicRuntimeConfig: {
+    url: process.env.VERCEL_URL
+  },
   srcDir: __dirname,
   buildDir: ".nuxt/dist",
   build: {

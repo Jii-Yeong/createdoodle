@@ -11,8 +11,10 @@ const route = useRoute();
 const id = route.params.id;
 const text = ref("");
 
+const url = useRuntimeConfig().url;
+
 onMounted(() => {
-  getMd(id).then((response) => {
+  getMd(id, url).then((response) => {
     response.text().then((value) => {
       console.log(value);
       text.value = value;
