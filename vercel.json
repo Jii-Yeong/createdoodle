@@ -6,10 +6,13 @@
       "use": "@nuxtjs/vercel-builder",
       "config": {
         "generateStaticRoutes": true,
-        "tscOptions" : {
-          "sourceMap" : false
+        "tscOptions": {
+          "sourceMap": false
         }
       }
     }
-  ]
+  ],
+  "github": {
+    "silent": true
+  }
 }
