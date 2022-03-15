@@ -4,6 +4,11 @@ import Components from 'unplugin-vue-components/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineNuxtConfig({
+  srcDir: __dirname,
+  buildDir: ".nuxt/dist",
+  build: {
+    publicPath: ".nuxt/dist"
+  },
   components: [
     {
       path: '~/components',

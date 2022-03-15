@@ -15,5 +15,17 @@
         ]
       }
     }
+  ],
+  "routes": [
+    {
+      "src": "/.nuxt/.+",
+      "headers": {
+        "Cache-Control": "max-age=31557600"
+      }
+    },
+    {
+      "src": "^/pages/post/(.*)",
+      "dest": "^/post"
+    }
   ]
 }
