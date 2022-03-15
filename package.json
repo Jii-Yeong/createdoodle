@@ -14,6 +14,8 @@
   "dependencies": {
     "@kangc/v-md-editor": "^2.3.14",
     "@nuxt/nitro": "^0.10.0",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxt/typescript-runtime": "^2.1.0",
     "@nuxtjs/vercel-builder": "^0.22.1",
     "balm-ui": "^9.42.2",
     "css-minimizer-webpack-plugin": "^3.4.1",
