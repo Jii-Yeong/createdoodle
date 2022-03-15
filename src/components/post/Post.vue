@@ -6,7 +6,7 @@
 
 <script setup>
 import css from "@assets/css/main.scss";
-import pathe, { resolve } from "pathe";
+import pathe, { resolve, join } from "pathe";
 
 const route = useRoute();
 const id = route.params.id;
@@ -15,7 +15,7 @@ const __dirname = pathe.resolve();
 
 if (process.server) {
   const fs = await import("fs");
-  const filePath = resolve(".", `posts/${1}.md`);
+  const filePath = join(process.cwd(), `posts/${1}.md`);
   const content = fs.readFileSync(filePath, "utf8");
   text.value = content;
 }
