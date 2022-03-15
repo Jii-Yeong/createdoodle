@@ -6,9 +6,12 @@
 
 <script setup>
 import css from "@assets/css/main.scss";
+import path, { join } from "pathe";
+
 const route = useRoute();
 const id = route.params.id;
 const text = ref("");
+const __dirname = path.resolve();
 
 if (process.server) {
   const fs = await import("fs");
