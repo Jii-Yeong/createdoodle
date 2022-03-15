@@ -1,4 +1,4 @@
-import VMdPreview from '@kangc/v-md-editor/lib/preview';
+import VMdPreview from '@kangc/v-md-editor/lib/preview.js';
 import vuepressTheme from '@kangc/v-md-editor/lib/theme/vuepress.js';
 import Prism from 'prismjs';
 import '@kangc/v-md-editor/lib/style/base-editor.css';
