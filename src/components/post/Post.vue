@@ -19,6 +19,8 @@ if (process.server) {
   const content = fs.readFileSync(process.cwd() + "/posts/1.md", "utf8");
   text.value = content;
 }
+
+console.log(process.env.VERCER_URL);
 </script>
 
 <style scoped lang="scss">
