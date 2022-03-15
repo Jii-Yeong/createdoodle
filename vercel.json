@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "nuxt.config.js",
-      "use": "@nuxtjs/vercel-builder"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "nuxt.config.ts",
+      "use": "@nuxtjs/vercel-builder",
+      "config": {
+        "generateStaticRoutes": true,
+        "tscOptions" : {
+          "sourceMap" : false
+        }
+      }
     }
   ]
 }
