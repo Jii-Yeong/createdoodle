@@ -20,6 +20,7 @@
     "sourceMap": true,
     "strict": true,
     "noEmit": true,
+    "moduleResolution": "node",
     "experimentalDecorators": true,
     "types": [
       "node",
