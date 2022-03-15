@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@kangc/v-md-editor": "^2.3.14",
+    "@nuxt/nitro": "^0.10.0",
     "@nuxtjs/vercel-builder": "^0.22.1",
     "balm-ui": "^9.42.2",
     "material-icons": "^1.10.7",
@@ -24,5 +25,6 @@
     "unplugin-vue-components": "^0.17.21",
     "vuetify": "^2.6.3",
     "webpack": "^5.70.0"
-  }
+  },
+  "type": "module"
 }
