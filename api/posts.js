@@ -1,4 +1,6 @@
 export const getMd = (id, url) => {
-  console.log(url)
-  return fetch(`https://${url}/posts/${id}.md`)
+  if (url) {
+    return fetch(`https://${url}/posts/${id}.md`)
+  }
+  return fetch(`http://localhost:3000/posts/${id}.md`)
 }
