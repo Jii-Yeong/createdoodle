@@ -1,7 +1,9 @@
 <template>
-  <common-header />
-  <navigation />
-  <post />
+  <div id="page">
+    <common-header />
+    <navigation />
+    <post />
+  </div>
 </template>
 
 <script setup>

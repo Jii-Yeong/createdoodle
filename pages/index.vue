@@ -1,6 +1,9 @@
 <template>
-  <common-header />
-  <navigation />
+  <div id="page">
+    <common-header />
+    <navigation />
+    <content-list />
+  </div>
 </template>
 
 <script setup lang="ts">
