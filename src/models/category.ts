@@ -1,4 +1,4 @@
 export interface Category {
-  upperTitle: string,
-  lowerList: string[],
+  upperTitle: string;
+  lowerList: string[];
 }
