@@ -16,7 +16,6 @@ const url = useRuntimeConfig().url;
 onMounted(() => {
   getMd(id, url).then((response) => {
     response.text().then((value) => {
-      console.log(value);
       text.value = value;
     });
   });
