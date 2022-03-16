@@ -65,7 +65,7 @@ interface Props {
       width: 270px;
       height: 170px;
       @include xs {
-        width: 100%;
+        width: 67vw;
       }
     }
   }
