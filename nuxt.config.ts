@@ -12,6 +12,9 @@ export default defineNuxtConfig({
   build: {
     publicPath: ".nuxt/dist"
   },
+  css: [
+    '@assets/css/main.scss'
+  ],
   components: [
     {
       path: '~/components',
@@ -40,5 +43,12 @@ export default defineNuxtConfig({
         '@assets': resolve(__dirname, './assets')
       }
     },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@import "./assets/css/mixin";`
+        }
+      }
+    }
   },
 })
