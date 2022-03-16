@@ -3,7 +3,7 @@
     <div>
       <p class="title">끄적끄적</p>
     </div>
-    <search-bar />
+    <!-- <search-bar /> -->
   </header>
 </template>
 
