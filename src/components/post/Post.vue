@@ -5,8 +5,8 @@
 </template>
 
 <script setup>
-import css from "@assets/css/main.scss";
 import { getMd } from "/api/posts";
+
 const route = useRoute();
 const id = route.params.id;
 const text = ref("");
@@ -28,5 +28,9 @@ onMounted(() => {
   width: 75%;
   float: right;
   margin-top: 100px;
+  @include xs {
+    float: left;
+    display: flex;
+  }
 }
 </style>

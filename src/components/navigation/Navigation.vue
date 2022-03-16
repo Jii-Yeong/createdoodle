@@ -20,5 +20,8 @@ import { category } from "@src/data/category";
   border-right: 1px solid #c2c2c2;
   position: fixed;
   overflow-y: auto;
+  @include xs {
+    display: none;
+  }
 }
 </style>
