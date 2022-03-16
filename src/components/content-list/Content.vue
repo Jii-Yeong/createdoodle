@@ -55,6 +55,9 @@ interface Props {
       height: 170px;
     }
   }
+  a {
+    text-decoration: none;
+  }
 }
 
 .post-information {
