@@ -25,5 +25,11 @@ import { postList } from "@src/data/post";
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include xs {
+    width: 100%;
+    margin: 70px 0px;
+    padding: 0px;
+    float: left;
+  }
 }
 </style>
