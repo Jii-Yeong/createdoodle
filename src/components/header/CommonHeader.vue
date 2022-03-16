@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div>
-      <p class="title">끄적끄적</p>
+      <nuxt-link class="title" to="/">끄적끄적</nuxt-link>
     </div>
     <!-- <search-bar /> -->
   </header>
@@ -25,6 +25,7 @@
     padding: 0;
     color: #5764ab;
     font-weight: 700;
+    text-decoration: none;
   }
 }
 </style>
