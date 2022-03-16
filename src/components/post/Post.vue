@@ -29,8 +29,8 @@ onMounted(() => {
   float: right;
   margin-top: 100px;
   @include xs {
+    width: 100%;
     float: left;
-    display: flex;
   }
 }
 </style>
