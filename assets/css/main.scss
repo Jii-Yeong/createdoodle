@@ -4,3 +4,9 @@ html, body, #__nuxt {
   margin: 0;
   padding: 0;
 }
+
+.vuepress-markdown-body {
+  h1 {
+    word-break: keep-all;
+  }
+}
