@@ -1,7 +1,7 @@
-{
-  "functions": {
-    "api/posts.js": {
-      "includeFiles": "posts/**"
-    }
-  }
-}
+//{
+//  "functions": {
+//    "api/posts.js": {
+//      "includeFiles": "posts/**"
+//    }
+//  }
+//}
