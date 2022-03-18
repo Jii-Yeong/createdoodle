@@ -10,7 +10,7 @@ export const postList: PostList[] = [
   {
     title: 'vercel + nuxt3 전역 환경변수 설정하기',
     description: 'vercel과 nuxt3에서 전역 환경변수를 설정합니다.',
-    thumbnail: '1',
+    thumbnail: '2',
     route: 2,
   },
 ]
