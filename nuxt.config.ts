@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   publicRuntimeConfig: {
     url: process.env.VERCEL_URL,
     googleAnalyticsId: process.env.GOOGLE_ANALYTICS_ID,
+    googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION,
   },
   srcDir: __dirname,
   buildDir: ".nuxt/dist",

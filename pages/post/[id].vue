@@ -7,5 +7,12 @@
 </template>
 
 <script setup>
-</script>
+const googleSiteVerification = useRuntimeConfig().googleSiteVerification;
 
+useMeta({
+  meta: {
+    name: "google-site-verification",
+    content: googleSiteVerification,
+  },
+});
+</script>

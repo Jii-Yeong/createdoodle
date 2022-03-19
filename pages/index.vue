@@ -6,5 +6,13 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
+const googleSiteVerification = useRuntimeConfig().googleSiteVerification;
+
+useMeta({
+  meta: {
+    name: "google-site-verification",
+    content: googleSiteVerification,
+  },
+});
 </script>
