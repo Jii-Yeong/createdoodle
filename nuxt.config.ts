@@ -5,7 +5,8 @@ import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineNuxtConfig({
   publicRuntimeConfig: {
-    url: process.env.VERCEL_URL
+    url: process.env.VERCEL_URL,
+    googleAnalyticsId: process.env.GOOGLE_ANALYTICS_ID,
   },
   srcDir: __dirname,
   buildDir: ".nuxt/dist",

@@ -1,9 +1,10 @@
 import vueGtag from 'vue-gtag';
 
 export default defineNuxtPlugin((nuxtApp) => {
+  const googleAnalyticsId = useRuntimeConfig().googleAnalyticsId;
   nuxtApp.vueApp.use(vueGtag, {
     config: {
-      id: process.env.GOOGLE_ANALYTICS_ID,
+      id: googleAnalyticsId,
       params: {
         anonymize_ip: true
       }
