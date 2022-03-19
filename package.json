@@ -6,7 +6,6 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "@nuxtjs/google-analytics": "^2.4.0",
     "nuxt3": "^3.0.0-27451165.114cbe3",
     "sass": "^1.49.9",
     "vue-loader": "^17.0.0",
