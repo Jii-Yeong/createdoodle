@@ -1,4 +1,9 @@
 <template>
+  <Html>
+    <Head>
+      <Title>{{ title }}</Title>
+    </Head>
+  </Html>
   <div id="post-wrapper">
     <v-md-preview :text="text" />
   </div>
@@ -6,12 +11,14 @@
 
 <script setup>
 import { getMd } from "/api/posts";
+import { postList } from "@src/data/post";
 
 const route = useRoute();
 const id = route.params.id;
 const text = ref("");
 
 const url = useRuntimeConfig().url;
+const title = postList.filter((list) => list.route === Number(id))[0].title;
 
 onMounted(() => {
   getMd(id, url).then((response) => {

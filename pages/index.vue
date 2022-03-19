@@ -10,6 +10,7 @@
 const googleSiteVerification = useRuntimeConfig().googleSiteVerification;
 
 useMeta({
+  title: "끄적끄적",
   meta: {
     name: "google-site-verification",
     content: googleSiteVerification,
