@@ -22,11 +22,6 @@ export default defineNuxtConfig({
       path: '~/components',
       pathPrefix: false,
     },
-    {
-      path: 'src/pages',
-      extensions: ['vue'],
-      pathPrefix: false,
-    }
   ],
   vite: {
     plugins: [
