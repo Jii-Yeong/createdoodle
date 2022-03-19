@@ -50,7 +50,6 @@ interface Props {
     margin: 0px 30px;
     width: 270px;
     height: 170px;
-    background-color: #e2e2e2;
     display: flex;
     flex-direction: column;
     justify-content: center;
