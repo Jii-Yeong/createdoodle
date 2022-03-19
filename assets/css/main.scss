@@ -3,9 +3,11 @@ html, body, #__nuxt, #page {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Noto Sans KR';
 }
 
 .vuepress-markdown-body {
+  font-family: 'Noto Sans KR' !important;
   h1 {
     word-break: keep-all;
   }
