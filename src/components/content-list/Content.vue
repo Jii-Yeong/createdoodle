@@ -23,7 +23,7 @@ const props = defineProps<Props>();
 
 onMounted(() => {
   const imageElement = <HTMLImageElement>image.value;
-  imageElement.style.background = `center/contain no-repeat url('thumbnail/${props.thumbnail}.png')`;
+  imageElement.style.background = `center/contain no-repeat url('posts/thumbnail/${props.thumbnail}.png')`;
 });
 
 interface Props {
