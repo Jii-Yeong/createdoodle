@@ -2,6 +2,12 @@ import { PostList } from "src/models/post";
 
 export const postList: PostList[] = [
   {
+    title: 'nuxt3으로 배포한 사이트를 구글 애널리틱스에 등록하기',
+    description: 'vue-gtag를 이용하여 nuxt3 프로젝트를 구글 애널리틱스에 등록합니다.',
+    thumbnail: '4',
+    route: 4,
+  },
+  {
     title: '자주쓰는 vue3 <script setup> 기본 문법 정리',
     description: 'vue3 <script setup>에서 자주 사용하는 기본 문법을 정리합니다.',
     thumbnail: '3',
