@@ -2,6 +2,12 @@ import { PostList } from "src/models/post";
 
 export const postList: PostList[] = [
   {
+    title: '복잡도와 Big O 표기법',
+    description: '복잡도와 Big O 표기법에 대한 정리',
+    thumbnail: '5',
+    route: 5,
+  },
+  {
     title: 'nuxt3으로 배포한 사이트를 구글 애널리틱스에 등록하기',
     description: 'vue-gtag를 이용하여 nuxt3 프로젝트를 구글 애널리틱스에 등록합니다.',
     thumbnail: '4',
