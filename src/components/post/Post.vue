@@ -20,7 +20,6 @@
 <script setup>
 import { getMd } from "/api/posts";
 import { postList } from "@src/data/post";
-import VueUtterances from "vue-utterances";
 
 const route = useRoute();
 const id = route.params.id;
