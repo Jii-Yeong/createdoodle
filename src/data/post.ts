@@ -2,6 +2,12 @@ import { PostList } from "src/models/post";
 
 export const postList: PostList[] = [
   {
+    title: 'vue3 setup script 에서 부모 컴포넌트에서 자식 컴포넌트 변수/함수 사용하기',
+    description: 'vue3 setup script 에서 부모 컴포넌트에서 자식 컴포넌트 변수/함수를 사용할 수 있습니다.',
+    thumbnail: '6',
+    route: 6,
+  },
+  {
     title: '복잡도와 Big O 표기법',
     description: '복잡도와 Big O 표기법에 대한 정리',
     thumbnail: '5',
