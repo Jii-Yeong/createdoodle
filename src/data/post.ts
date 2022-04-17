@@ -2,6 +2,12 @@ import { PostList } from "src/models/post";
 
 export const postList: PostList[] = [
   {
+    title: '백준 1712번 손익분기점',
+    description: '백준 1712번 손익분기점에 대한 문제 해설입니다.',
+    thumbnail: '7',
+    route: 7,
+  },
+  {
     title: 'vue3 setup script 에서 부모 컴포넌트에서 자식 컴포넌트 변수/함수 사용하기',
     description: 'vue3 setup script 에서 부모 컴포넌트에서 자식 컴포넌트 변수/함수를 사용할 수 있습니다.',
     thumbnail: '6',
