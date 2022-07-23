@@ -132,11 +132,11 @@ table {
 body {
   background-color: #6862a9;
 }
-
 /* fallback */
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
+  font-display: block;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/materialicons/v135/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
 }

@@ -1,38 +1,29 @@
 <template>
   <div id="content-list">
-    <div class="content-area">
-      <content
-        class="content-item"
-        v-for="(post, index) in postList"
-        :key="index"
-        :title="post.title"
-        :description="post.description"
-        :thumbnail="post.thumbnail"
-        :route="post.route"
-      />
-    </div>
+    <content
+      v-for="(post, index) in postList"
+      :key="index"
+      :description="post.description"
+      :route="post.route"
+      :thumbnail="post.thumbnail"
+      :title="post.title"
+      class="content-item"
+    />
   </div>
 </template>
 
 <script setup>
-import { postList } from '@src/data/post'
-</script>
+import {postList} from '@src/data/post'
+import Content from "@src/components/content-list/Content";</script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 #content-list {
+  max-width: 950px;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-  .content-area {
-    max-width: 1120px;
-    padding: 60px;
-
-    .content-item {
-      margin: 32px 0;
-    }
+  .content-item {
+    margin: 16px 0;
   }
 }
 </style>

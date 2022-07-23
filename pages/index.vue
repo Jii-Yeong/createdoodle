@@ -1,7 +1,9 @@
 <template>
   <div id="page">
     <common-header />
-    <content-list />
+    <div class="content-list-area">
+      <content-list />
+    </div>
   </div>
 </template>
 
@@ -21,3 +23,14 @@ useMeta({
   },
 })
 </script>
+
+<style lang="scss" scoped>
+.content-list-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+</style>

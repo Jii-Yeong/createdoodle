@@ -1,14 +1,14 @@
 <template>
-  <nuxt-link class="content" :to="{ name: 'post-id', params: { id: route } }">
+  <nuxt-link :to="{ name: 'post-id', params: { id: route } }" class="content">
     <div class="content-info">
       <p class="title">{{ title }}</p>
     </div>
-    <img class="image" :src="`posts/thumbnail/${thumbnail}.png`" />
+    <img :src="`posts/thumbnail/${thumbnail}.png`" class="image" />
   </nuxt-link>
 </template>
 
-<script setup lang="ts">
-import { defineProps } from 'vue'
+<script lang="ts" setup>
+import {defineProps} from 'vue'
 
 interface Props {
   title: string
@@ -20,9 +20,8 @@ interface Props {
 defineProps<Props>()
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .content {
-  width: 100%;
   max-height: 178px;
   background: #ffffff;
   border-radius: 8px;
