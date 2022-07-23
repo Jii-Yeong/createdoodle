@@ -9,16 +9,15 @@
   </header>
 </template>
 
-<script setup lang="ts">
-import DeleteIcon from '@mui/icons-material/Delete'
-</script>
+<script lang="ts" setup></script>
 
 <style lang="scss" scoped>
 #header {
   width: 100%;
   height: 60px;
-  background-color: rgba(212, 205, 255, 0.29);
+  background-color: rgba(141, 130, 210, 0.7);
   position: fixed;
+  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.03);
 
   .header-content {
     margin-right: 16px;
