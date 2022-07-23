@@ -15,8 +15,8 @@
 </template>
 
 <script lang="ts" setup>
-import { postList } from "@src/data/post";
-import Content from "@src/components/content-list/Content.vue";
+import { postList } from '@src/data/post';
+import Content from '@src/components/content-list/Content.vue';
 </script>
 
 <style lang="scss" scoped>
@@ -26,7 +26,7 @@ import Content from "@src/components/content-list/Content.vue";
   display: flex;
   flex-direction: column;
   .content-area {
-    padding: 60px 30px;
+    padding: 60px 16px;
     .content-item {
       margin: 16px 0;
     }

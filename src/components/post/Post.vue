@@ -55,7 +55,7 @@ onMounted(() => {
   max-width: 950px;
   width: 100%;
   .post {
-    padding: 80px 30px;
+    padding: 80px 16px;
   }
 }
 </style>
