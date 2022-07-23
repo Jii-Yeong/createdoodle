@@ -8,12 +8,12 @@
 </template>
 
 <script lang="ts" setup>
-import '@public/asset/init.scss'
-import CommonHeader from "@src/components/header/CommonHeader.vue"
-import ContentList from "@src/components/content-list/ContentList.vue"
-import {useMeta, useRuntimeConfig} from "nuxt/app"
+import '@assets/css/init.scss';
+import CommonHeader from '@src/components/header/CommonHeader.vue';
+import ContentList from '@src/components/content-list/ContentList.vue';
+import { useMeta, useRuntimeConfig } from 'nuxt/app';
 
-const googleSiteVerification = useRuntimeConfig().googleSiteVerification
+const googleSiteVerification = useRuntimeConfig().googleSiteVerification;
 
 useMeta({
   title: '끄적끄적',
@@ -21,7 +21,7 @@ useMeta({
     name: 'google-site-verification',
     content: googleSiteVerification,
   },
-})
+});
 </script>
 
 <style lang="scss" scoped>
@@ -32,5 +32,4 @@ useMeta({
   flex-direction: column;
   align-items: center;
 }
-
 </style>
