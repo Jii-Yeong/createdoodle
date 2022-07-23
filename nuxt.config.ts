@@ -1,7 +1,7 @@
-import { defineNuxtConfig } from 'nuxt'
-import { resolve } from 'pathe'
-import Components from 'unplugin-vue-components/vite'
-import IconsResolver from 'unplugin-icons/resolver'
+import { defineNuxtConfig } from "nuxt";
+import { resolve } from "pathe";
+import Components from "unplugin-vue-components/vite";
+import IconsResolver from "unplugin-icons/resolver";
 
 export default defineNuxtConfig({
   publicRuntimeConfig: {
@@ -12,14 +12,12 @@ export default defineNuxtConfig({
   srcDir: __dirname,
   buildDir: ".nuxt/dist",
   build: {
-    publicPath: ".nuxt/dist"
+    publicPath: ".nuxt/dist",
   },
-  css: [
-    '@assets/css/main.scss'
-  ],
+  css: ["@assets/css/main.scss"],
   components: [
     {
-      path: '~/components',
+      path: "~/components",
       pathPrefix: false,
     },
   ],
@@ -29,23 +27,24 @@ export default defineNuxtConfig({
         resolvers: [
           IconsResolver({
             prefix: false,
-            enabledCollections: ['mdi']
+            enabledCollections: ["mdi"],
           }),
-        ]
-      })
+        ],
+      }),
     ],
     resolve: {
       alias: {
-        '@src': resolve(__dirname, './src'),
-        '@assets': resolve(__dirname, './assets')
-      }
+        "@src": resolve(__dirname, "./src"),
+        "@assets": resolve(__dirname, "./assets"),
+        "@public": resolve(__dirname, "./public"),
+      },
     },
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: `@import "./assets/css/mixin";`
-        }
-      }
-    }
+          additionalData: `@import "./assets/css/mixin";`,
+        },
+      },
+    },
   },
-})
+});

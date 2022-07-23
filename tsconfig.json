@@ -12,8 +12,9 @@
     "experimentalDecorators": true,
     "baseUrl": ".",
     "paths": {
-      "@src/*": ["@src/*"],
-      "@assets/*": ["@assets/*"]
+      "@src/*": ["src/*"],
+      "@assets/*": ["assets/*"],
+      "@public/*": ["public/*"]
     },
     "types": ["@nuxt/types", "@types/node"]
   },

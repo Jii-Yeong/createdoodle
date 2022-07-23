@@ -6,15 +6,13 @@
   </div>
 </template>
 
-<script setup>
-const googleSiteVerification = useRuntimeConfig().googleSiteVerification
+<script setup lang="ts">
+import {useMeta, useRuntimeConfig} from "nuxt/app";
+import CommonHeader from "@src/components/header/CommonHeader.vue";
+import Navigation from "@src/components/navigation/Navigation.vue";
+import Post from "@src/components/post/Post.vue";
 
-useHead({
-  link: {
-    href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
-    rel: 'stylesheet',
-  },
-})
+const googleSiteVerification = useRuntimeConfig().googleSiteVerification
 
 useMeta({
   meta: {
@@ -23,3 +21,9 @@ useMeta({
   },
 })
 </script>
+
+<style scoped lang="scss">
+#page {
+
+}
+</style>

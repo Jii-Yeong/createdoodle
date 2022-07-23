@@ -5,17 +5,13 @@
   </div>
 </template>
 
-<script setup>
-import '../public/asset/init.scss'
+<script lang="ts" setup>
+import '@public/asset/init.scss'
+import CommonHeader from "@src/components/header/CommonHeader.vue"
+import ContentList from "@src/components/content-list/ContentList.vue"
+import {useMeta, useRuntimeConfig} from "nuxt/app"
 
 const googleSiteVerification = useRuntimeConfig().googleSiteVerification
-
-useHead({
-  link: {
-    href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
-    rel: 'stylesheet',
-  },
-})
 
 useMeta({
   title: '끄적끄적',
