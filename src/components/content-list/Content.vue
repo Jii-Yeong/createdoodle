@@ -8,16 +8,16 @@
 </template>
 
 <script lang="ts" setup>
-import {defineProps} from 'vue'
+import { defineProps } from "vue";
 
 interface Props {
-  title: string
-  description: string
-  thumbnail: string
-  route: number
+  title: string;
+  description: string;
+  thumbnail: string;
+  route: number;
 }
 
-defineProps<Props>()
+defineProps<Props>();
 </script>
 
 <style lang="scss" scoped>
@@ -32,14 +32,14 @@ defineProps<Props>()
 
   .content-info {
     .title {
-      font-size: 24px;
+      font-size: 20px;
       color: #14171c;
     }
   }
 
   .image {
     max-width: 233px;
-    max-height: 126px;
+    max-height: 80px;
   }
 }
 </style>
