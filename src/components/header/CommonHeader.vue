@@ -15,7 +15,7 @@
 #header {
   width: 100%;
   height: 60px;
-  background-color: rgba(141, 130, 210, 0.7);
+  background-color: rgba(202, 195, 248, 0.7);
   position: fixed;
   box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.03);
 
