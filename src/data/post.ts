@@ -59,4 +59,11 @@ export const postList: PostList[] = [
     thumbnail: '7',
     route: 7,
   },
+  {
+    title: '버블 정렬 (Bubble Sort)',
+    category: '자료구조/알고리즘',
+    description: '버블 정렬에 대한 정리',
+    thumbnail: '8',
+    route: 8,
+  },
 ]
