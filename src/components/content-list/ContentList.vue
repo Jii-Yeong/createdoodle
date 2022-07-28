@@ -1,35 +1,35 @@
 <template>
   <div id="content-list">
-    <content
-      v-for="(post, index) in postList"
-      :key="index"
-      :title="post.title"
-      :description="post.description"
-      :thumbnail="post.thumbnail"
-      :route="post.route"
-    />
+    <div class="content-area">
+      <content
+        v-for="(post, index) in postList"
+        :key="index"
+        :description="post.description"
+        :route="post.route"
+        :thumbnail="post.thumbnail"
+        :title="post.title"
+        class="content-item"
+      />
+    </div>
   </div>
 </template>
 
-<script setup>
-import { postList } from "@src/data/post";
+<script lang="ts" setup>
+import { postList } from '@src/data/post';
+import Content from '@src/components/content-list/Content.vue';
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 #content-list {
-  margin: 60px;
-  width: 75%;
-  height: 100%;
-  float: right;
-  padding: 50px 0px;
+  max-width: 950px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  @include xs {
-    width: 100%;
-    margin: 70px 0px;
-    padding: 0px;
-    float: left;
+  .content-area {
+    padding: 60px 16px;
+    .content-item {
+      margin: 16px 0;
+    }
   }
 }
 </style>
