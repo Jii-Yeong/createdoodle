@@ -2,7 +2,7 @@
   <div id="content-list">
     <div class="content-area">
       <content
-        v-for="(post, index) in postList"
+        v-for="(post, index) in reverseList"
         :key="index"
         :description="post.description"
         :route="post.route"
@@ -15,8 +15,11 @@
 </template>
 
 <script lang="ts" setup>
-import { postList } from '@src/data/post';
-import Content from '@src/components/content-list/Content.vue';
+import { postList } from '@src/data/post'
+import Content from '@src/components/content-list/Content.vue'
+
+const copyList = [...postList]
+const reverseList = copyList.reverse()
 </script>
 
 <style lang="scss" scoped>
