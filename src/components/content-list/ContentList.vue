@@ -7,6 +7,8 @@
         :description="post.description"
         :route="post.route"
         :thumbnail="post.thumbnail"
+        :category="post.category"
+        :sub-category="post.subCategory"
         :title="post.title"
         class="content-item"
       />
