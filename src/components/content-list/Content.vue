@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="{ name: 'post-id', params: { id: route } }" class="content">
+  <nuxt-link :to="`/post/${route}`" class="content">
     <div class="content-info">
       <p class="title">{{ title }}</p>
     </div>
@@ -8,16 +8,16 @@
 </template>
 
 <script lang="ts" setup>
-import { defineProps } from "vue";
+import { defineProps } from 'vue'
 
 interface Props {
-  title: string;
-  description: string;
-  thumbnail: string;
-  route: number;
+  title: string
+  description: string
+  thumbnail: string
+  route: number
 }
 
-defineProps<Props>();
+defineProps<Props>()
 </script>
 
 <style lang="scss" scoped>
