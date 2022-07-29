@@ -12,7 +12,7 @@
       </div>
       <v-md-preview :text="text" />
     </div>
-    <div ref="comment" />
+    <div ref="comment"></div>
   </div>
   <!--  <Script src="https://utteranc.es/client.js"-->
   <!--          repo="Jii-Yeong/createdoodle-comments"-->
@@ -28,7 +28,6 @@ S
 import { onMounted, ref } from 'vue'
 import { getMd } from '/api/posts'
 import { postList } from '@src/data/post'
-import { useRoute, useRuntimeConfig } from 'nuxt/app'
 
 const route = useRoute()
 const id = route.params.id as string
@@ -52,9 +51,9 @@ function setPostInformation() {
 
 onMounted(() => {
   getMd(id, url).then((response: Response) => {
-    response.text().then((value) => {
-      text.value = value
-    })
+    if (response) {
+      text.value = String(response)
+    }
   })
   setPostInformation()
   const script = document.createElement('script')

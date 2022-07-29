@@ -8,18 +8,17 @@
 </template>
 
 <script lang="ts" setup>
-import { useMeta, useRuntimeConfig } from 'nuxt/app';
-import CommonHeader from '@src/components/header/CommonHeader.vue';
-import Post from '@src/components/post/Post.vue';
+import CommonHeader from '@src/components/header/CommonHeader.vue'
+import Post from '@src/components/post/Post.vue'
 
-const googleSiteVerification = useRuntimeConfig().googleSiteVerification;
+const googleSiteVerification = useRuntimeConfig().googleSiteVerification
 
 useMeta({
   meta: {
     name: 'google-site-verification',
     content: googleSiteVerification,
   },
-});
+})
 </script>
 
 <style lang="scss" scoped>
