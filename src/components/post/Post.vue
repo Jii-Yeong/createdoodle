@@ -5,6 +5,9 @@
     </Head>
   </Html>
   <div id="post-wrapper">
+    <div class="search-area">
+      <search-bar />
+    </div>
     <div class="post">
       <div class="category">
         <p class="text">{{ category }}</p>
@@ -71,7 +74,11 @@ onMounted(() => {
 #post-wrapper {
   max-width: 950px;
   width: 100%;
-  margin: 80px 0;
+  margin: 100px 0;
+
+  .search-area {
+    height: 85px;
+  }
 
   .post {
     background-color: #ffffff;

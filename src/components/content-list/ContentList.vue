@@ -1,5 +1,8 @@
 <template>
   <div id="content-list">
+    <div class="search-area">
+      <search-bar />
+    </div>
     <div class="content-area">
       <content
         v-for="(post, index) in reverseList"
@@ -21,17 +24,40 @@ import { postList } from '@src/data/post'
 import Content from '@src/components/content-list/Content.vue'
 
 const copyList = [...postList]
-const reverseList = copyList.reverse()
+const reverseList = ref(copyList.reverse())
+
+const route = useRoute()
+const text = computed(() => {
+  return route.query.text
+})
+
+onBeforeMount(() => {
+  if (text.value)
+    reverseList.value = copyList.filter((item) =>
+      item.title.includes(text.value)
+    )
+})
+
+watch(text, () => {
+  console.log(text)
+  reverseList.value = copyList.filter((item) => item.title.includes(text.value))
+})
 </script>
 
 <style lang="scss" scoped>
 #content-list {
+  margin: 100px 0;
   max-width: 950px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  .search-area {
+    float: right;
+    margin: 0 16px;
+  }
   .content-area {
-    padding: 60px 16px;
+    padding: 30px 16px;
+
     .content-item {
       margin: 16px 0;
     }
