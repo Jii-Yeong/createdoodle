@@ -1,8 +1,7 @@
 
 
 # [createdoodle](https://www.createdoodle.net)
-![image](https://user-images.githubusercontent.com/57383657/158934184-f52b9284-e57a-4788-9e00-71a2cf2f8d5b.png)
-정적 기술 블로그
+Nuxt3으로 작성한 정적 기술 블로그
 
 **homepage: https://www.createdoodle.net**
 
