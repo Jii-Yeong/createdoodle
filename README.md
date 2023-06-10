@@ -3,9 +3,6 @@
 # [createdoodle](https://www.createdoodle.net)
 Nuxt3으로 작성한 정적 기술 블로그
 
-**homepage: https://www.createdoodle.net**
-
-
 ## hosting
 - deploying : [Vercel](https://vercel.com/)
 - domain : [AWS Route53](https://aws.amazon.com/ko/route53/)
