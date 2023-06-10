@@ -1,6 +1,6 @@
 
 
-# [createdoodle](https://www.createdoodle.net)
+# createdoodle
 Nuxt3으로 작성한 정적 기술 블로그
 
 ## hosting
