@@ -1,7 +1,11 @@
 
 
 # createdoodle
+![image](https://github.com/Jii-Yeong/createdoodle/assets/57383657/02d73b28-139b-440e-bba6-20debf7d37c7)
+
 Nuxt3으로 작성한 정적 기술 블로그
+
+URL 주소 : https://createdoodle.vercel.app/
 
 ## hosting
 - deploying : [Vercel](https://vercel.com/)
